@@ -3,22 +3,28 @@
  *
  * Made by Max Hauser
  * License: MIT (http://max.mit-license.org/)
- * 
+ *
  * USAGE:
  *
- * Sieve.on(next, state) {
+ * Sieve.on(next, function(state) {
  *   state.canceled = true;
- *   next();	
+ *   next();
  * });
  *
  * Sieve.fire('save', function(state) {
  *   if(state.canceled) {
- *     // I was canceled	
+ *     // I was canceled
  *   }
  * });
  *
  */
-(function(global) {
+(function(root, factory) {
+	if (typeof define === 'function' && define.amd) {
+		define(factory);
+	} else {
+		root.Sieve = factory();
+	}
+}(this, function() {
 	'use strict';
 
 	var events = {};
@@ -65,11 +71,10 @@
 		next();
 	}
 
-	global.Sieve = {
+	return {
 		on: on,
 		un: un,
 		fire: fire,
 		clear: clear
 	};
-
-}(this));
+}));
