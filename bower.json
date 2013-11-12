@@ -1,0 +1,22 @@
+{
+  "name": "sieve",
+  "version": "0.1",
+  "description": "A simple async event thingie.",
+  "main": "sieve.js",
+  "keywords": [
+    "event",
+    "async"
+  ],
+  "authors": [
+    "Max Hauser"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/maxhauser/sieve",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
