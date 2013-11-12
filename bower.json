@@ -1,7 +1,7 @@
 {
   "name": "sieve",
-  "version": "0.1",
-  "description": "A simple async event thingie.",
+  "version": "0.2.0",
+  "description": "A simple async event lib.",
   "main": "sieve.js",
   "keywords": [
     "event",
