@@ -5,11 +5,9 @@ A simple async event lib.
 
 This library is mostly untested and very much work in progress - so use at your own risk.
 
-Usage
------
+## Usage
 
-Sieve.on
---------
+### Sieve.on
 Registers an event handler.
 
 	Sieve.on('save', function(next, state) {
@@ -17,8 +15,7 @@ Registers an event handler.
 		next();
 	});
 
-Sieve.fire
-----------
+### Sieve.fire
 Fires an event.
 
 	Sieve.fire('save', function(state) {
@@ -27,13 +24,12 @@ Fires an event.
 		}
 	});
 
-Sieve.un
---------
+### Sieve.un
 Unregisteres an event handler.
 
 	Sieve.un('save', myHandler);
 
-Sieve.clear
+### Sieve.clear
 -----------
 Clears all handlers for an event.
 
