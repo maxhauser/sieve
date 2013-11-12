@@ -30,7 +30,6 @@ Unregisteres an event handler.
 	Sieve.un('save', myHandler);
 
 ### Sieve.clear
------------
 Clears all handlers for an event.
 
 	Seive.clear('save');
