@@ -5,6 +5,10 @@ A simple async event lib.
 
 This library is mostly untested and very much work in progress - so use at your own risk.
 
+## Installation
+
+	bower install sieve
+
 ## Usage
 
 ### Sieve.on
